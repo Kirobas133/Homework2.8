@@ -23,34 +23,41 @@ void print_info(Figure* fig) {
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    Triangle tri(10, 20, 30, 50, 60, 70);
-    Triangle90 tri90(10, 20, 30, 50, 60);
-    Triangle2SideEqual tri2se(10, 20, 50, 60);
-    TriangleAllEqual triae(30);
-    Quadrilateral qua(10, 20, 30, 40, 50, 60, 70, 80);
-    Rectangle rec(10, 20);
-    Square squa(20);
-    Parallelogram prll(20, 30, 30, 40);
-    Rhombus rho(30, 30, 40);
 
-    print_info(&tri);
-    std::cout << std::endl;
-    print_info(&tri90);
-    std::cout << std::endl;
-    print_info(&tri2se);
-    std::cout << std::endl;
-    print_info(&triae);
-    std::cout << std::endl;
-    print_info(&qua);
-    std::cout << std::endl;
-    print_info(&rec);
-    std::cout << std::endl;
-    print_info(&squa);
-    std::cout << std::endl;
-    print_info(&prll);
-    std::cout << std::endl;
-    print_info(&rho);
-    std::cout << std::endl;
+    try {
+        Triangle tri(10, 20, 30, 50, 60, 70);
+        Triangle90 tri90(10, 20, 30, 50, 60);
+        Triangle2SideEqual tri2se(10, 20, 50, 60);
+        TriangleAllEqual triae(30);
+        Quadrilateral qua(10, 20, 30, 40, 50, 60, 70, 80);
+        Rectangle rec(10, 20);
+        Square squa(20);
+        Parallelogram prll(20, 30, 30, 40);
+        Rhombus rho(30, 30, 40);
+
+        print_info(&tri);
+        std::cout << std::endl;
+        print_info(&tri90);
+        std::cout << std::endl;
+        print_info(&tri2se);
+        std::cout << std::endl;
+        print_info(&triae);
+        std::cout << std::endl;
+        print_info(&qua);
+        std::cout << std::endl;
+        print_info(&rec);
+        std::cout << std::endl;
+        print_info(&squa);
+        std::cout << std::endl;
+        print_info(&prll);
+        std::cout << std::endl;
+        print_info(&rho);
+        std::cout << std::endl;
+    }
+    catch () {
+
+    }
+
 
 }
 
