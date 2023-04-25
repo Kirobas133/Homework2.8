@@ -3,5 +3,5 @@
 
 class Triangle2SideEqual :public Triangle {
 public:
-	Triangle2SideEqual(int, int, int, int);
+	Triangle2SideEqual(int, int, int, int, int, int);
 };

@@ -1,7 +1,7 @@
 #pragma once
-#include "ParallelogramHeader.h"
+#include "QuadrilateralHeader.h"
 
-class Rectangle :public Parallelogram {
+class Rectangle :public Quadrilateral {
 public:
-	Rectangle(int, int);
+	Rectangle(int, int, int, int, int, int, int, int);
 };

@@ -26,15 +26,16 @@ int main()
 
     try {
         Triangle tri(10, 20, 30, 50, 60, 70);
-        Triangle90 tri90(10, 20, 30, 50, 60);
-        Triangle2SideEqual tri2se(10, 20, 50, 60);
-        TriangleAllEqual triae(30);
-        Quadrilateral qua(10, 20, 30, 40, 50, 60, 70, 80);
-        Rectangle rec(10, 20);
-        Square squa(20);
-        Parallelogram prll(20, 30, 30, 40);
-        Rhombus rho(30, 30, 40);
+        Triangle90 tri90(10, 20, 30, 50, 40, 90);
+        Triangle2SideEqual tri2se(10, 20, 10, 50, 80, 50);
+        TriangleAllEqual triae(30, 30, 30, 60, 60, 60);
+        Quadrilateral qua(10, 20, 30, 40, 50, 60, 130, 120);
+        Rectangle rec(10, 40, 10, 40, 90, 90, 90, 90);
+        Square squa(40, 40, 40, 40, 90, 90, 90, 90);
+        Parallelogram prll(10, 20, 10, 20, 80, 100, 80, 100);
+        Rhombus rho(30, 30, 30, 30, 80, 100, 80, 100);
 
+        std::cout << std::endl;
         print_info(&tri);
         std::cout << std::endl;
         print_info(&tri90);
@@ -54,8 +55,8 @@ int main()
         print_info(&rho);
         std::cout << std::endl;
     }
-    catch () {
-
+    catch (const std::exception& e) {
+        std::cout << "Ошибка создания фигуры. Причина: " << e.what() << std::endl;
     }
 
 

@@ -3,5 +3,5 @@
 
 class Parallelogram :public Quadrilateral {
 public:
-	Parallelogram(int, int, int, int);
+	Parallelogram(int, int, int, int, int, int, int, int);
 };

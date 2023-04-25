@@ -1,7 +1,7 @@
 #pragma once
-#include "RectangleHeader.h"
+#include "QuadrilateralHeader.h"
 
-class Square :public Rectangle {
+class Square :public Quadrilateral {
 public:
-	Square(int);
+	Square(int, int, int, int, int, int, int, int);
 };

@@ -1,7 +1,7 @@
 #pragma once
-#include "ParallelogramHeader.h"
+#include "QuadrilateralHeader.h"
 
-class Rhombus :public Parallelogram {
+class Rhombus :public Quadrilateral {
 public:
-	Rhombus(int, int, int);
+	Rhombus(int, int, int, int, int, int, int, int);
 };
