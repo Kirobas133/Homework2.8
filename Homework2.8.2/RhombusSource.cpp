@@ -1,8 +1,9 @@
 #include "RhombusHeader.h"
 
-Rhombus::Rhombus(int a, int b, int c, int d, int A, int B, int C, int D) :Quadrilateral(a, b, c, d, A, B, C, D) {
+Rhombus::Rhombus(int a, int b, int c, int d, int A, int B, int C, int D) :Quadrilateral(a, b, c, d, A, B, C, D, 1) {
     if ((a == b) && (b == c) && (c == d) && (A == C) && (B == D)) {
         name = "Ромб";
+        print_create_info();
     }
     else if ((a != b) || (b != c) || (c != d)) {
         if ((A == C) && (B == D)) {

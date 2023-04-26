@@ -1,8 +1,9 @@
 #include "RectangleHeader.h"
 
-Rectangle::Rectangle(int a, int b, int c, int d, int A, int B, int C, int D) :Quadrilateral(a, b, c, d, A, B, C, D) {
+Rectangle::Rectangle(int a, int b, int c, int d, int A, int B, int C, int D) :Quadrilateral(a, b, c, d, A, B, C, D, 1) {
     if ((A == B) && (B == C) && (C == D) && (D == 90) && (a == c) && (b == d)) {
         name = "Прямоугольник";
+        print_create_info();
     }
     else if ((A != B) || (B != C) || (C != D) || (D != 90)) {
         if ((a == c) && (b == d)) {

@@ -8,8 +8,10 @@ protected:
     int a, b, c, d;
     std::string name;
     Figure(int, int, int, int, int, int, int, int);
+    Figure(int, int, int, int, int, int, int, int, int);
 public:
     Figure();
     int get_sides_count();
     void print_fig();
+    void print_create_info();
 };

@@ -12,6 +12,19 @@ Figure::Figure(int a, int b, int c, int d, int A, int B, int C, int D) {
     this->c = c;
     this->d = d;
     this->name = "Фигура";
+   // print_create_info();
+}
+Figure::Figure(int a, int b, int c, int d, int A, int B, int C, int D, int t) {
+    sides_count = 0;
+    this->A = A;
+    this->B = B;
+    this->C = C;
+    this->D = D;
+    this->a = a;
+    this->b = b;
+    this->c = c;
+    this->d = d;
+    this->name = "Фигура";
 }
 Figure::Figure() {
     sides_count = 0;
@@ -27,6 +40,20 @@ Figure::Figure() {
 }
 int Figure::get_sides_count() {
     return sides_count;
+}
+void Figure::print_create_info() {
+    if (D == 0) {
+        std::cout << name << " (";
+        std::cout << "стороны: " << a << ", " << b << ", " << c << "; ";
+        std::cout << "углы: " << A << ", " << B << ", " << C << ")" << " создан.";
+        std::cout << std::endl;
+    }
+    else {
+        std::cout << name << " (";
+        std::cout << "стороны: " << a << ", " << b << ", " << c << ", " << d << "; ";
+        std::cout << "углы: " << A << ", " << B << ", " << C << ", " << D << ")" << " создан.";
+        std::cout << std::endl;
+    }
 }
 void Figure::print_fig() {
     if (D == 0) {

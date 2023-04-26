@@ -1,8 +1,9 @@
 #include"SquareHeader.h"
 
-Square::Square(int a, int b, int c, int d, int A, int B, int C, int D) :Quadrilateral(a, b, c, d, A, B, C, D) {
+Square::Square(int a, int b, int c, int d, int A, int B, int C, int D) :Quadrilateral(a, b, c, d, A, B, C, D, 1) {
     if ((a == b) && (b == c) && (c == d) && (A == B) && (B == C) && (C == D) && (D == 90)) {
         name = " вадрат";
+        print_create_info();
     }
     else if ((a != b) || (b != c) || (c != d)) {
         if ((A == B) && (B == C) && (C == D) && (D == 90)) {

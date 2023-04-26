@@ -1,8 +1,9 @@
 #include "ParallelogramHeader.h"
 
-Parallelogram::Parallelogram(int a, int b, int c, int d, int A, int B, int C, int D) :Quadrilateral(a, b, c, d, A, B, C, D) {
+Parallelogram::Parallelogram(int a, int b, int c, int d, int A, int B, int C, int D) :Quadrilateral(a, b, c, d, A, B, C, D, 1) {
     if ((a == c) && (b == d) && (A == C) && (B == D)) {
         name = "Параллелограм";
+        print_create_info();
     }
     else if ((A == C) && (B == D)){
         throw std::exception("стороны a,c и b,d не равны попарно\n");

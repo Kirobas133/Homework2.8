@@ -4,5 +4,6 @@
 class Triangle :public Figure {
 public:
 	Triangle(int, int, int, int, int, int);
+	Triangle(int, int, int, int, int, int, int);
 	int get_sides_count();
 };

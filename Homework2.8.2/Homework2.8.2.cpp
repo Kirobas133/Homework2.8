@@ -23,6 +23,7 @@ void print_info(Figure* fig) {
 int main()
 {
     setlocale(LC_ALL, "Russian");
+   // Triangle tri(10, 20, 30, 50, 60, 70);
 
     try {
         Triangle tri(10, 20, 30, 50, 60, 70);
